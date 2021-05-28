@@ -10,7 +10,7 @@ public class BaekJoon2293DP_Coin {
 		int k = s.nextInt(); //만들어야할 금액
 
 		int[] coins = new int[n]; //동전의 가짓수만큼 배열 생성
-		int[] dp = new int[k + 1]; //k원까지 가는 금액별 경우의 수를 환산할 것임으로 k 로 설정하려고 했으나 프린트 찍을 때 편하려고 +1 해줬당
+		int[] dp = new int[k + 1]; //k원까지 가는 금액별 경우의 수를 환산할 것임으로 k 로 설정하려고 0번째 줄을 기본값으로 설정해주기 위해 +1 해줌
 
 		for (int i = 0; i < n; i++) { //가짓수만큼 돌면서 동전 배열에 동전들 채워줌
 			coins[i] = s.nextInt();
