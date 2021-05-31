@@ -30,7 +30,7 @@ public class BaekJoon2294DP_Coin_MinCase {
 		}
 
 		int result = dp[k]; // k원에서 만들 수 있는 최소값을 결과 변수에 저장
-		if (result == 999999) { // dp[k] 값이 이상값이라면? 우리가 초기화 해둔 값이라면? 최소값이 없다는 소리 , 그렇다면 -1 출력
+		if (result == 999999) { // dp[k] 값이 이상값이라면? 최소값이 없다는 소리 , 그렇다면 -1 출력
 			System.out.println(-1);
 		} else { // 최소값이 저장되어있는 경우 최소값 출력
 			System.out.println(dp[k]);
